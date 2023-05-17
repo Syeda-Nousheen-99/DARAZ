@@ -1,0 +1,356 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial,
+      Sans-serif;
+      background-color: #faf9f9;
+  }
+  .message-btn {
+    padding: 0.3rem 0.5rem;
+    border: 0;
+    background-color: white;
+    font-size: 1.5rem;
+    color: #044254;
+    position: fixed;
+    bottom: 0;
+    right: 4rem;
+  }
+
+  /* Navbar */
+  .navbar {
+  background-color: #e7e8ec;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+.nav-links {
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-right: 80px;
+}
+.nav-links li {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 0.75rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(63, 53, 53);
+  transition: 0.2s;
+}
+.nav-links li:first-child a {
+    color: rgb(255, 115, 0);
+  }
+  .navbar a:hover {
+    color: rgb(255, 115, 0);
+    text-decoration: underline;
+  }
+
+  /* Logo */
+  .main-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+  }
+  .logo-part {
+    width: 18%;
+  }
+  .logo-img {
+    width: 9rem;
+    height: 2.7rem;
+    margin: 0 1rem;
+  }
+  .search-container {
+    margin: 0.75rem;
+    width: 53%;
+  }
+  input:focus {
+    outline: none;
+  }
+  .search-icon {
+    padding: 1rem;
+    background-color: rgb(255, 115, 0);
+    color: white;
+    font-size: 1.1rem;
+  }
+  .search-container button {
+    border: 0;
+    position: relative;
+    left: -1rem;
+  }
+  .search-container input {
+    padding: 0.76rem;
+    padding-left: 1.5rem;
+    border: 0;
+    border-radius: 2px;
+    background-color: #eeeff3c0;
+    width: 90%;
+  }
+
+  .cart-icon {
+    width: 5%;
+    position: relative;
+    right: 30px;
+  }
+  .cart-icon a img {
+    width: 30px;
+  }
+  .side-logo {
+    width: 20%;
+  }
+  .side-logo img {
+    margin: 0.5rem;
+    width: 12rem;
+    height: 3rem;
+  }
+  /* side text */
+  .categories a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.75rem;
+    display: block;
+    padding: 0.2rem 0.5rem;
+  }
+  .categories a:hover {
+    background-color: #a3adc2;
+    display: block;
+  }
+  .categories li {
+    padding-top: 0.2rem;
+  }
+  .categories {
+    list-style-type: none;
+    margin-left: 1.5rem;
+    padding-left: 0rem;
+    padding-top: 0.5rem;
+    text-align: left;
+    height: 100%;
+    background-color: white;
+  }
+  .category-block {
+    width: 17%;
+    height: 350px;
+    margin-left: 50px;
+
+  }
+  .carousel-inner {
+    width: 998px;
+   
+  }
+  .side-text {
+    display: flex;
+    
+    background-color: rgb(243, 243, 183);
+    height: 348px;
+  }
+  /* mid pic  */
+  .mid {
+    margin: 0px 80px;
+  }
+  /* icon section  */
+  .section-body {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .categories-img {
+    width: 2rem;
+  }
+  .category-text {
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+    padding-top: 0.35rem;
+  }
+  .category-icon {
+    width: 15rem;
+    padding: 0.25rem 0.5rem;
+    background-color: white;
+    border-radius: 2rem;
+    border: 2px solid rgb(227, 219, 219);
+    margin: 0.5rem;
+  }
+  .category-text:hover {
+color: #044254;
+  }
+  .category-icon:hover {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  /* mall  */
+  .darazmall-mainimg {
+    height: 12rem;
+  }
+  .img-box-shadow {
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .darazmall-img {
+    width: 3.5rem;
+    height: 3.1rem;
+  }
+  .darazmall-img-box {
+    width: 4.5rem;
+    height: 4.5rem;
+    position: absolute;
+    top: 10rem;
+    left: 3.5rem;
+    background-color: white;
+    display: flex;
+    place-content: center;
+    align-items: center;
+  }
+  .shop-more {
+    background-color: #f2f3f718;
+    font-size: 1.2rem;
+    color: rgb(255, 115, 0);
+  }
+  #mall {
+    margin: 0px 70px;
+  } 
+  
+  /* semi product */
+  .flash-head {
+    color: #757575;
+    margin: 0px 80px;
+    font-size: 22px;
+  }
+.card {
+  margin: 0.9rem 5px;
+  border: 0;
+}
+#sp {
+  background-color: white;
+  justify-content: center;
+  height: 360px;
+  width: 1200px;
+  margin-left: 70px;
+}
+.card:hover {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.19);
+}
+.card-text {
+  font-size: 0.82rem;
+}
+.card-body h3 {
+  color: rgb(255, 115, 0);
+  font-size: 1.15rem;
+}
+.discount {
+  color: black;
+  text-decoration: none;
+}
+.lighter-text {
+  color: rgb(207, 203, 203);
+  font-size: 0.85rem;
+  text-decoration: line-through;
+}
+/* categories  */
+.category-card {
+  margin: 0px 0px;
+  box-sizing: border-box;
+  border: 1px solid rgb(210, 209, 209);
+  width: 100%;
+  height: 120px;
+}
+.category-mainimg {
+  width: 7.2rem;
+  height: 5rem;
+  /* margin: 0.5rem auto; */
+}
+
+
+.Mall-text h2 {
+  font-size: 28px;
+  margin: 10px 80px;
+}
+#cat {
+  background-color: white;
+  height: 100px;
+  width: 1200px;
+  margin-left: 70px;
+}
+.btn-loadmore {
+  margin-top: 150px;
+    width: 30%;
+    padding: 0.5rem;
+    color: rgb(255, 115, 0);
+    border: 1px solid rgb(255, 115, 0);
+    background-color: #e7e8ec00;
+}
+.btn {
+ display: block;
+ justify-content: center;
+}
+
+/* footer  */
+.footer-link-section {
+  background-color: #2e2e54;
+  color: white;
+ 
+  height: 360px;
+
+}
+.footer-subheading {
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 0px 30px;
+  margin-bottom: 0px;
+}
+.footer-list {
+  list-style-type: none;
+  
+}
+.footer-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.footer-list a:hover {
+  text-decoration: underline;
+}
+.qrcode-img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+}
+.footer-logo-img {
+  width: 3rem;
+  height: 3rem;
+}
+.footer-side-text {
+  color: rgb(255, 115, 0);
+}
+.apple-link-img {
+  width: 10rem;
+  height: 3.25rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+.mainf  {
+  display: flex;
+}
+
+
+
+
+
+
+
+/* @media screen and (min-width: 500px ) {
+  .navbar {
+    
+  }
+} */
+
+@media screen and (max-width:900px) {
+  .card-text{
+    font-size: 5px;
+  }
+}
